@@ -2,50 +2,174 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ma Page Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youzz Website</title>
+
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            margin-top: 100px;
+            line-height: 1.6;
         }
 
-        h1 {
-            color: #0078D7;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #0078D7;
+        header {
+            background: #0078d7;
             color: white;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            height: 400px;
+            background: linear-gradient(to right, #0078d7, #00bfff);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+
+        .hero h1 {
+
+            font-size: 3rem;
+
+        }
+
+
+        .hero p {
+
+            margin: 20px 0;
+            font-size: 1.2rem;
+
+        }
+
+        .btn {
+            background: white;
+
+            color: #0078d7;
+
+            padding: 12px 25px;
             border: none;
+
             border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
         }
 
-        button:hover {
-            background-color: #005a9e;
+
+        .services {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .cards {
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 300px;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
         }
     </style>
 </head>
+
 <body>
 
-    <h1>Bienvenue sur ma page Web</h1>
-    <p>Clique sur le bouton ci-dessous :</p>
+<header>
+    <nav>
+        <h2>Youzz</h2>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <button onclick="saluer()">
-        Cliquez ici
-    </button>
+<section class="hero">
+    <h1>Bienvenue sur Youzz</h1>
+    <p>Mon premier site web hébergé sur GitHub.</p>
+    <button class="btn" onclick="message()">Commencer</button>
+</section>
 
-    <script>
-        function saluer() {
-            alert("Bonjour et bienvenue !");
-        }
-    </script>
+<section class="services">
+    <h2>Nos Services</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Développement Web</h3>
+            <p>Création de sites modernes et responsives.</p>
+        </div>
+
+        <div class="card">
+            <h3>Intelligence Artificielle</h3>
+            <p>Solutions basées sur le Machine Learning.</p>
+        </div>
+
+        <div class="card">
+            <h3>Data Science</h3>
+            <p>Analyse et visualisation de données.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Youzz - Tous droits réservés</p>
+</footer>
+
+<script>
+    function message() {
+
+        alert("Bienvenue sur le site Youzz !");
+
+    }
+
+</script>
+
 
 </body>
 </html>
-
 
