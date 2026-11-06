@@ -1,1 +1,51 @@
-Bienvenue
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma Page Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: #0078D7;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenue sur ma page Web</h1>
+    <p>Clique sur le bouton ci-dessous :</p>
+
+    <button onclick="saluer()">
+        Cliquez ici
+    </button>
+
+    <script>
+        function saluer() {
+            alert("Bonjour et bienvenue !");
+        }
+    </script>
+
+</body>
+</html>
+
+
